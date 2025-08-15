@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza Viva - Explorando os Campos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/icon.png" alt="Logo Natureza Viva">
+                <h1>Natureza <span>Viva</span></h1>
+            </div>
+            <nav class="nav">
+                <button class="mobile-menu" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#ecosystem">Ecossistema</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Explorando a Beleza dos Campos</h2>
+            <p>Descubra a riqueza e diversidade dos campos naturais ao redor do mundo.</p>
+            <a href="#about" class="btn">Explore Mais</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre os <span>Campos</span></h2>
+                <p>Conheça mais sobre esses ecossistemas fascinantes</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Importância dos Campos Naturais</h3>
+                    <p>Os campos são ecossistemas essenciais que cobrem aproximadamente 40% da superfície terrestre. Eles desempenham um papel crucial na manutenção da biodiversidade, regulação do clima e sustentação de comunidades humanas e animais.</p>
+                    <p>Nossos campos abrigam uma variedade impressionante de espécies vegetais e animais, muitas delas endêmicas e adaptadas às condições específicas desses ambientes.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Biodiversidade</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-water"></i>
+                            <h4>Recursos Hídricos</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cloud-sun"></i>
+                            <h4>Regulação Climática</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/foto1.jpg" alt="Campo com flores silvestres">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeria de <span>Fotos</span></h2>
+                <p>Imagens impressionantes de campos ao redor do mundo</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/foto1.jpg" alt="Campo florido">
+                    <div class="gallery-overlay">
+                        <h4>Campos Floridos</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto2.jpg" alt="Campo ao entardecer">
+                    <div class="gallery-overlay">
+                        <h4>Pôr-do-sol nos Campos</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto3.jpg" alt="Campo com montanhas">
+                    <div class="gallery-overlay">
+                        <h4>Campos Montanhosos</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="#" class="btn">Ver Mais Fotos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ecosystem section-padding" id="ecosystem">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ecossistema dos <span>Campos</span></h2>
+                <p>Entenda como funciona esse ambiente único</p>
+            </div>
+            <div class="ecosystem-content">
+                <div class="ecosystem-tabs">
+                    <button class="tab-btn active" data-tab="flora">Flora</button>
+                    <button class="tab-btn" data-tab="fauna">Fauna</button>
+                    <button class="tab-btn" data-tab="climate">Clima</button>
+                </div>
+                <div class="ecosystem-tab-content">
+                    <div class="tab-panel active" id="flora">
+                        <h3>Vegetação dos Campos</h3>
+                        <p>A flora dos campos é caracterizada principalmente por gramíneas, herbáceas e pequenos arbustos adaptados a condições de pouca umidade e solos muitas vezes pobres em nutrientes.</p>
+                        <p>Muitas plantas desenvolveram mecanismos especiais para sobreviver, como raízes profundas, folhas pequenas ou capacidade de armazenar água.</p>
+                    </div>
+                    <div class="tab-panel" id="fauna">
+                        <h3>Vida Animal nos Campos</h3>
+                        <p>Os campos abrigam uma diversidade impressionante de animais, incluindo mamíferos como antílopes, coiotes e lebres, além de inúmeras espécies de aves, répteis e insetos.</p>
+                        <p>Muitos animais desenvolveram camuflagem eficiente para se misturar à vegetação e escapar de predadores.</p>
+                    </div>
+                    <div class="tab-panel" id="climate">
+                        <h3>Condições Climáticas</h3>
+                        <p>Os campos naturais geralmente ocorrem em regiões com precipitação intermediária - suficiente para sustentar gramíneas, mas insuficiente para o desenvolvimento de florestas.</p>
+                        <p>As temperaturas podem variar amplamente, desde campos tropicais quentes até as estepes frias do hemisfério norte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em <span>Contato</span></h2>
+                <p>Tem dúvidas ou quer saber mais sobre os campos?</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@naturezaviva.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/icon.png" alt="Logo Natureza Viva">
+                    <h3>Natureza <span>Viva</span></h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#ecosystem">Ecossistema</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Assine para receber atualizações</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Natureza Viva. Todos os direitos reservados.</p>
+                <div class="footer-terms">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
